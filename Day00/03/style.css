@@ -1,0 +1,238 @@
+body
+{
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
+.wrapper
+{
+  width: 100%;
+  float: left;
+}
+
+.image_box
+{
+  height: 100%;
+  width: 30%;
+  float: left;
+  display: flex;
+  align-items: center;
+}
+
+.tab
+{
+  padding: 100px 0 0 100px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.orange
+{
+  background-color: rgb(227, 133, 98);
+}
+
+.yellow
+{
+  background-color: rgb(241, 192, 19);
+}
+
+.grey
+{
+  background-color: rgb(133, 133, 133);
+}
+
+.green
+{
+  background-color: rgb(155, 179, 121);
+}
+
+.khaki
+{
+  background-color: rgb(111, 119, 62);
+}
+
+.blue
+{
+  background-color: rgb(125, 175, 241);
+}
+
+.light_orange
+{
+  background-color: rgb(241, 199, 186);
+}
+
+.pale_yellow
+{
+  background-color: rgb(227, 220, 182);
+}
+
+.light_yellow
+{
+  background-color: rgb(230, 196, 145);
+}
+
+.case h2
+{
+  text-align: center;
+}
+
+.info
+{
+  height: 12px;
+  font-size: 1.2em;
+  padding: 4px 5px 0 10px
+}
+
+.letter
+{
+  font-size: 3em;
+  padding-left: 10px;
+  font-weight: bolder;
+}
+
+.name
+{
+  padding-left: 10px;
+  font-size: 1.3em;
+}
+
+#meme
+{
+  width: 300px;
+  height: 300px;
+}
+
+span.right
+{
+  display: block;
+  float: left;
+}
+
+span.left
+{
+  display: block;
+  float: right;
+}
+
+.row
+{
+  display: flex;
+  width: 100%;
+}
+
+.case
+{
+  font-size: 10px;
+  box-sizing: border-box;
+  flex: 0 0 10em;
+  height: 100%;
+  float: left;
+  border: 3px solid black;
+}
+
+@media screen and (min-width: 1400px) and (max-width: 2000px)
+{
+  .case
+  {
+    font-size: 7px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px)
+{
+  .case
+  {
+    font-size: 6px;
+  }
+
+  #meme
+  {
+    width: 250px;
+    height: 250px;
+  }
+
+  .info, .name, .letter
+  {
+    padding-left: 5px;
+  }
+}
+
+@media screen and (min-width: 1020px) and (max-width: 1200px)
+{
+  .case
+  {
+    font-size: 5px;
+  }
+
+  #meme
+  {
+    width: 200px;
+    height: 200px;
+  }
+
+
+  .info, .name, .letter
+  {
+    padding-left: 3px;
+  }
+}
+
+@media screen and (min-width: 830px) and (max-width: 1020px)
+{
+  .case
+  {
+    font-size: 4px;
+  }
+
+  #meme
+  {
+    width: 150px;
+    height: 150px;
+  }
+
+
+  .info, .name, .letter
+  {
+    padding-left: 3px;
+  }
+}
+
+@media screen and (min-width: 840px) and (max-width: 1020px)
+{
+  .case
+  {
+    font-size: 4px;
+  }
+
+  .info, .name, .letter
+  {
+    padding-left: 3px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 840px)
+{
+  .case
+  {
+    font-size: 3px;
+  }
+
+  #meme
+  {
+    width: 100px;
+    height: 100px;
+  }
+
+
+  .info, .name, .letter
+  {
+    padding-left: 1px;
+  }
+}
+
+.none
+{
+  border: none;
+}
