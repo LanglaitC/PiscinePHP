@@ -3,143 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Mendeleiev</title>
-    <style style="text/css">
-    body
-    {
-      width: 100vw;
-      height: 100vh;
-      margin: 0;
-    }
-
-    .wrapper
-    {
-      width: 70%;
-      float: left;
-      height: 1200px;
-    }
-
-    .image_box
-    {
-      height: 100%;
-      width: 30%;
-      float: left;
-      display: flex;
-      align-items: center;
-    }
-
-    .tab
-    {
-      padding: 100px 0 0 100px;
-      height: 900px;
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .orange
-    {
-      background-color: rgb(227, 133, 98);
-    }
-
-    .yellow
-    {
-      background-color: rgb(241, 192, 19);
-    }
-
-    .grey
-    {
-      background-color: rgb(133, 133, 133);
-    }
-
-    .green
-    {
-      background-color: rgb(155, 179, 121);
-    }
-
-    .khaki
-    {
-      background-color: rgb(111, 119, 62);
-    }
-
-    .blue
-    {
-      background-color: rgb(125, 175, 241);
-    }
-
-    .light_orange
-    {
-      background-color: rgb(241, 199, 186);
-    }
-
-    .pale_yellow
-    {
-      background-color: rgb(227, 220, 182);
-    }
-
-    .light_yellow
-    {
-      background-color: rgb(230, 196, 145);
-    }
-
-    .case h2
-    {
-      text-align: center;
-    }
-
-    .info
-    {
-      height: 12px;
-      font-size: 1.2em;
-      padding: 4px 5px 0 10px
-    }
-
-    .letter
-    {
-      font-size: 3em;
-      padding-left: 10px;
-      font-weight: bolder;
-    }
-
-    .name
-    {
-      padding-left: 10px;
-      font-size: 1.3em;
-    }
-
-    span.right
-    {
-      display: block;
-      float: left;
-    }
-
-    span.left
-    {
-      display: block;
-      float: right;
-    }
-
-    .row
-    {
-      display: flex;
-      width: 100%;
-    }
-
-    .case
-    {
-      box-sizing: border-box;
-      flex: 0 0 80px;
-      height: 100%;
-      float: left;
-      border: 3px solid black;
-      font-size: 8px;
-    }
-
-    .none
-    {
-      border: none;
-    }
-
-    </style>
+    <link rel="stylesheet" href="./responsive.css">
   </head>
   <body>
     <div class="wrapper">
@@ -176,7 +40,7 @@
             <p class="name"></p>
           </div>
           <div class="case none" style"position: relative;">
-            <img src="./chemical_meme.jpg" style="width:300px; height:300px; position:absolute;" alt="Chemical meme">
+            <img id="meme" src="http://i0.kym-cdn.com/entries/icons/facebook/000/006/472/P96pX.jpg" style="position:absolute;" alt="Chemical meme">
           </div>
           <div class="case none">
             <div class="info"><span class="right"></span><span class="left"></span></div>

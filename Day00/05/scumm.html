@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>Day of the 42</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./scumm.css">
   </head>
   <body>
     <div class="wrapper">
+      <img src="http://www.pngmart.com/files/4/Ryan-Gosling-Transparent-Background.png" id="ryan" alt="Ryan Gosling">
       <div class="head_box grey shadowed">
         <img id="title" src="./img/day_of_the_42.png" alt="Title">
         <div class="right_panel">
@@ -27,19 +28,25 @@
         <img src="./img/chat-icon.png" alt="Chat">
       </nav>
       <div class="center_box grey shadowed">
-        <img src="./img/cluster.jpg" alt="Salle remplie d'ordinateurs">
+        <img id="center_image" src="./img/cluster.jpg" alt="Salle remplie d'ordinateurs">
         <div class="bottom_input_box green shadowed">
-          Vous <span style="font-size:32px;">entrez</span> alors dans une grande piece dans une grande piece remplie d'ordinateurs...</br>
-           <span style="font-style:italic;">-Bonjour, vous êtes nouveau ici ? <br>
-          <input type="text" style="width:400px; margin-right:10px;"/><button>Repondre</button>
+          <span id="initial_text">Vous <span style="font-size:32px;">entrez</span> alors dans une grande piece remplie d'ordinateurs...</br></span>
+           <span style="font-style:italic; margin: 10px 0 10px 0; display:block;"><span id="dialog">-Bonjour, vous êtes nouveau ici ?</span><br>
+          <input id="answer" type="text" style="width:400px; margin: 10px 10px 0 0;"/><button id="button">Repondre</button>
         </div>
       </div>
       <nav class="right_nav grey shadowed">
-          <img src="./img/book.png" alt="Livre">
-          <img src="./img/towel.png" alt="Serviette">
-          <img src="./img/brick.jpg" alt="Briques">
+          <img id="livre" src="./img/book.png" alt="Livre">
+          <img id="piscine" src="./img/towel.png" alt="Serviette">
+          <img id="brick" src="./img/brick.jpg" alt="Briques">
       </nav>
       </div>
     </div>
   </body>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script.js">
+  </script>
 </html>
