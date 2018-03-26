@@ -13,32 +13,34 @@
         <div class="right_panel">
           <img id="loupe" src="./img/loupe.png" alt="Search">
           <div class="high_corner">
-            <img id="refresh" src="./img/reload.png" alt="Reload">
+            <a href="https://www.disney.com"><img id="refresh" src="./img/reload.png" alt="Reload" title="Recommencer au debut"></a>
           </div>
           <div class="bottom_corner">
-            <img id="croix" src="./img/close.gif" alt="Close">
+            <a href="https://www.relaischateaux.com"><img id="croix" src="./img/close.gif" alt="Close" title="Deconnecter"></a>
           </div>
         </div>
       </div>
       <nav class="left_nav grey shadowed">
-        <img src="./img/arrow.png" alt="Fleche">
-        <img src="./img/main.png" alt="Main">
-        <img src="./img/oeil.png" alt="Oeil">
-        <img src="./img/outil.png" alt="Outils">
-        <img src="./img/chat-icon.png" alt="Chat">
+        <img src="./img/arrow.png" alt="Fleche" title="Avancer">
+        <img src="./img/main.png" alt="Main" title="Prendre">
+        <img src="./img/oeil.png" id="border" alt="Oeil" title="Regarder">
+        <img src="./img/outil.png" alt="Outils" title="Utiliser">
+        <img src="./img/chat-icon.png" alt="Chat" title="Parler">
       </nav>
       <div class="center_box grey shadowed">
+        <a href="https://www.ikea.com" style="display:block; width:80px; height:50px; top: 60%; left:34%; position: absolute"></a>
+        <a href="https://www.apple.com" style="display:block; width:17%; height:20%; top:58%; right:4%; position: absolute"></a>
         <img id="center_image" src="./img/cluster.jpg" alt="Salle remplie d'ordinateurs">
         <div class="bottom_input_box green shadowed">
-          <span id="initial_text">Vous <span style="font-size:32px;">entrez</span> alors dans une grande piece remplie d'ordinateurs...</br></span>
-           <span style="font-style:italic; margin: 10px 0 10px 0; display:block;"><span id="dialog">-Bonjour, vous êtes nouveau ici ?</span><br>
-          <input id="answer" type="text" style="width:400px; margin: 10px 10px 0 0;"/><button id="button">Repondre</button>
+          <span id="initial_text">Vous <span style="font-size:2em;">entrez</span> alors dans une grande piece remplie <span style="text-shadow:8px 6px 6px red">d'ordinateurs...</span></br></span>
+           <span style="font-style:italic;" id="dialog">- Bonjour, vous êtes nouveau ici ? <br></span>
+          <input id="answer" type="text" style="width:400px; margin-right:10px;"/><button id="button">Repondre</button>
         </div>
       </div>
       <nav class="right_nav grey shadowed">
-          <img id="livre" src="./img/book.png" alt="Livre">
-          <img id="piscine" src="./img/towel.png" alt="Serviette">
-          <img id="brick" src="./img/brick.jpg" alt="Briques">
+          <img id="livre" src="./img/book.png" alt="Livre" title="Livre">
+          <img id="piscine" src="./img/towel.png" alt="Serviette" title="Serviette">
+          <div id="brick" title="Briques"></div>
       </nav>
       </div>
     </div>

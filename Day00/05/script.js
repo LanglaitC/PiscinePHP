@@ -1,6 +1,5 @@
 $(document).ready(function()
 {
-
   var state = -1;
   var answer = $("#answer");
 
