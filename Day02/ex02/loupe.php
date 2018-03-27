@@ -4,7 +4,14 @@ if ($argc == 2)
 {
 	if (($str = file_get_contents($argv[1])) !== FALSE)
 	{
-		preg_match_all("/<a.*>.*a>/", $str, $match);
-		print_r($match);
+		$str = preg_replace_callback(
+			"/(?<=title=)[^>]+(?=(.*>)*<\/a>)|(?<=>)[^>]+(?=(<.*>)*<\/a>)/",
+			function ($matches)
+			{
+				return(strtoupper($matches[0]));
+			},
+			$str
+		);
+		echo($str);
 	}
 }
