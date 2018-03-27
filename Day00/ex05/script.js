@@ -1,79 +1,77 @@
-$(document).ready(function()
-{
   var state = -1;
-  var answer = $("#answer");
+  var answer = document.getElementById("answer");
 
-  $("#piscine").click(function()
+  document.getElementById("piscine").addEventListener("click", function()
   {
     if (state == 2 || state >= 4)
     {
-      $("#ryan").attr("src", "./img/oss.png")
-      $("#ryan").css("left", "-430px");
-      $("#center_image").attr("src", "./img/piscine.jpg");
-      $("#dialog").html("Écoutez mon ptit, là j'viens d'tuer un croco'. Alors si vous voulez qu'on travaille d'égal à égal, faudrait vous y mettre");
+      document.getElementById("ryan").setAttribute("src", "./ressources/oss.png")
+      document.getElementById("ryan").style.left="-430px";
+      document.getElementById("center_image").setAttribute("src", "./ressources/piscine.jpg");
+      document.getElementById("dialog").innerHTML = "Écoutez mon ptit, là j'viens d'tuer un croco'. Alors si vous voulez qu'on travaille d'égal à égal, faudrait vous y mettre";
       state = 4;
     }
   })
-  $("#livre").click(function()
+  document.getElementById("livre").addEventListener("click",function()
   {
     if (state == 3 || state >= 4)
     {
-      $("#center_image").attr("src", "./img/bibliotheque.jpg");
-      $("#dialog").html("Nous voila a la bibliotheque, tu peux changer d'endroit en prenant un objet quand tu auras fini d'etudier");
+      document.getElementById("center_image").setAttribute("src", "./ressources/bibliotheque.jpg");
+      document.getElementById("dialog").innerHTML = "Nous voila a la bibliotheque, tu peux changer d'endroit en prenant un objet quand tu auras fini d'etudier";
       state = 4;
     }
   })
-  $("#brick").click(function()
+  document.getElementById("brick").addEventListener("click",function()
   {
     if (state == 3 || state >= 4)
     {
-      $("#ryan").attr("src", "./img/mario.png")
-      $("#center_image").attr("src", "./img/mario.jpg");
-      $("#dialog").html("Hello ! Tu as eu raison, rien de tels qu'un peu de retrogaming pour se changer l'esprit !");
+      document.getElementById("ryan").setAttribute("src", "./ressources/mario.png")
+      document.getElementById("center_image").setAttribute("src", "./ressources/mario.jpg");
+      document.getElementById("dialog").innerHTML = "Hello ! Tu as eu raison, rien de tels qu'un peu de retrogaming pour se changer l'esprit !";
       state = 4;
-      $("#ryan").css("left", "-350px");
+      document.getElementById("ryan").style.left = "-350px";
 
     }
   })
-  $("#button").click(function()
+  document.getElementById("button").addEventListener("click", function()
   {
-    if (state == -1 && answer.val())
+    console.log(state);
+    if (state == -1 && answer.value)
     {
-      if (answer.val().toLowerCase() == "oui")
-        $("#dialog").html("Genial je suis la depuis longtemps moi aussi.");
-      else if (answer.val().toLowerCase() == "non")
-        $("#dialog").html("Genial je viens d'arriver moi aussi.");
+      if (answer.value.toLowerCase() == "oui")
+        document.getElementById("dialog").innerHTML = "Genial je suis la depuis longtemps moi aussi.";
+      else if (answer.value.toLowerCase() == "non")
+        document.getElementById("dialog").innerHTML = "Genial je viens d'arriver moi aussi.";
       else
-        $("#dialog").html("J'aurais pense que tu repondrais par oui ou par non mais peu importe.");
-      $("#dialog").append(" Comment tu t'apelles au fait ?");
+        document.getElementById("dialog").innerHTML = "J'aurais pense que tu repondrais par oui ou par non mais peu importe.";
+      document.getElementById("dialog").innerHTML += " Comment tu t'apelles au fait ?";
       state = 0;
-      $("#initial_text").css("display", "none");
+      document.getElementById("initial_text").style.display = "none";
     }
-    else if (!state && answer.val())
+    else if (!state && answer.value)
     {
-      var name = answer.val();
+      var name = answer.value;
       state = 1;
-      $("#dialog").html("Bonjour "+name+", moi c'est Ryan est ce que tu es venu la pour travailler ?")
+      document.getElementById("dialog").innerHTML = "Bonjour "+name+", moi c'est Ryan est ce que tu es venu la pour travailler ?"
     }
     else if (state == 1)
     {
-      if (!answer.val())
-        $("#dialog").html("Ne sois pas timide "+name+", reponds moi : est ce que tu es la pour travailler ?")
-      else if (answer.val().toLowerCase() == "non")
+      if (!answer.value)
+        document.getElementById("dialog").innerHTML = "Ne sois pas timide "+name+", reponds moi : est ce que tu es la pour travailler ?"
+      else if (answer.value.toLowerCase() == "non")
       {
-          $("#dialog").html("Alors allons a la piscine, attrape ta serviette !");
+          document.getElementById("dialog").innerHTML = "Alors allons a la piscine, attrape ta serviette !";
           state = 2;
       }
-      else if (answer.val().toLowerCase() == "oui")
+      else if (answer.value.toLowerCase() == "oui")
       {
-          $("#dialog").html("Ok, je vais prendre mon livre, je te laisse trouver le tien et nous pourrons aller a la bibliotheque");
+          document.getElementById("dialog").innerHTML = "Ok, je vais prendre mon livre, je te laisse trouver le tien et nous pourrons aller a la bibliotheque";
           state = 3;
       }
       else
       {
           state = 4;
-          $("#dialog").html("Tu ne m'as pas l'air décidé, tu peux prendre un objet et il se passera peut être quelque chose");
+          document.getElementById("dialog").innerHTML = "Tu ne m'as pas l'air décidé, tu peux prendre un objet et il se passera peut être quelque chose";
       }
     }
   })
-});
