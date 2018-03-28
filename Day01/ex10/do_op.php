@@ -10,7 +10,10 @@ else
 		echo(intval(trim($argv[1])) - intval(trim($argv[3])));
 	else if (trim($argv[2]) == "/")
 		echo(intval(trim($argv[1])) / intval(trim($argv[3])));
+	else if (trim($argv[2]) == "%")
+		echo(intval(trim($argv[1])) % intval(trim($argv[3])));
 	else
 		echo(intval(trim($argv[1])) * intval(trim($argv[3])));
 	echo("\n");
 }
+?>

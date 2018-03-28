@@ -13,7 +13,7 @@ if ($argc >= 2)
 				if ($elem != "")
 					array_push($array, $elem);
 		}
-		$i++;	
+		$i++;
 	}
 	sort($array);
 	$i = 1;
@@ -23,4 +23,4 @@ if ($argc >= 2)
 		echo($elem."\n");
 	}
 }
-
+?>

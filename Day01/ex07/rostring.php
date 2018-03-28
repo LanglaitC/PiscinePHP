@@ -10,16 +10,17 @@ if ($argc >= 2)
 	sort($array);
 	$i = 1;
 	$j = count($array);
-	echo($array[$j - 1]);
-	if ($j > 1)
-		echo(" ");
 	foreach($array as $elem)
 	{
-		if ($i != $j)
+		if ($i != 1)
+		{
 			echo($elem);
-		if ($i < $j - 1)
 			echo(" ");
+		}
 		$i++;
 	}
-	echo("\n");
+	echo($array[0]);
+	if ($j > 0)
+		echo("\n");
 }
+?>

@@ -7,4 +7,4 @@ foreach($argv as $elem)
 		echo($elem."\n");
 	$i++;
 }
-
+?>

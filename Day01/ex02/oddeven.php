@@ -2,7 +2,7 @@
 <?php
 function is_even()
 {
-	echo("Entrez un nombre : ");
+	echo("Entrez un nombre: ");
 	$handle = fopen("php://stdin", "r");
 	$ligne=fgets($handle);
 	if (is_numeric(trim($ligne)))
@@ -15,7 +15,7 @@ function is_even()
 	}
 	else if ($ligne)
 	{
-		echo(trim($ligne)." n'est pas un nombre\n");
+		echo("'".trim($ligne)."' n'est pas un chiffre\n");
 		is_even();
 	}
 	else
@@ -23,3 +23,4 @@ function is_even()
 }
 
 is_even();
+?>

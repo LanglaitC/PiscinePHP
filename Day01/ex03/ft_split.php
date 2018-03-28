@@ -1,4 +1,3 @@
-#!/usr/bin/php
 <?php
 function ft_split($str)
 {
@@ -12,3 +11,4 @@ function ft_split($str)
 	}
 	return($tab);
 }
+?>

@@ -4,7 +4,7 @@
 if ($argc == 2)
 {
 	$ret = sscanf($argv[1], "%d %c %d %s", $nbr1, $op, $nbr2, $resting);
-	if ($ret != 3 && $resting != "")
+	if ($ret != 3 || $resting != "" || !is_numeric($nbr1) || !is_numeric($nbr2))
 	{
 		echo("Invalid Syntax\n");
 		return(0);
@@ -25,3 +25,4 @@ if ($argc == 2)
 	echo("\n");
 
 }
+?>

@@ -2,7 +2,7 @@
 <?php
 if ($argc == 2)
 {
-	if (($str = file_get_contents($argv[1])) !== FALSE)
+		if (($str = file_get_contents($argv[1])) !== FALSE)
 	{
 		$str = preg_replace_callback(
 			"/(?<=title=)[^>]+(?=(.*>)*<\/a>)|(?<=>)[^>]+(?=(<.*>)*<\/a>)/",

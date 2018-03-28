@@ -1,4 +1,3 @@
-#!/usr/bin/php
 <?php
 function ft_is_sort($array)
 {
@@ -13,3 +12,4 @@ function ft_is_sort($array)
 	}
 	return (TRUE);
 }
+?>

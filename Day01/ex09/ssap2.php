@@ -23,12 +23,13 @@ if ($argc >= 2)
 				if ($elem != "")
 					array_push($array, $elem);
 		}
-		$i++;	
+		$i++;
 	}
-	sort($array, SORT_STRING);
+	sort($array, SORT_FLAG_CASE | SORT_NATURAL);
 	foreach($array as $elem)
 		if (is_alpha($elem[0]))
 			echo($elem."\n");
+	sort($array, SORT_STRING);
 	foreach($array as $elem)
 		if (is_number($elem[0]))
 			echo($elem."\n");
@@ -36,4 +37,4 @@ if ($argc >= 2)
 		if (is_alpha($elem[0]) == 0 && is_number($elem[0]) == 0)
 			echo($elem."\n");
 }
-
+?>
