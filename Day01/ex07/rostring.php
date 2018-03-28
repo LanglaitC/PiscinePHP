@@ -3,11 +3,10 @@
 if ($argc >= 2)
 {
 	$array = array();
-	$tab = str_word_count($argv[1], 1);
+	$tab = explode(" ", $argv[1]);
 	foreach($tab as $elem)
 		if ($elem != "")
 			array_push($array, $elem);
-	sort($array);
 	$i = 1;
 	$j = count($array);
 	foreach($array as $elem)

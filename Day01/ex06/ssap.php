@@ -15,7 +15,7 @@ if ($argc >= 2)
 		}
 		$i++;
 	}
-	sort($array);
+	sort($array, SORT_STRING);
 	$i = 1;
 	$j = count($array);
 	foreach($array as $elem)

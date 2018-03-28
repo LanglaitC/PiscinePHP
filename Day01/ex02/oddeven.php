@@ -1,11 +1,12 @@
 #!/usr/bin/php
 <?php
+
 function is_even()
 {
 	echo("Entrez un nombre: ");
 	$handle = fopen("php://stdin", "r");
 	$ligne=fgets($handle);
-	if (is_numeric(trim($ligne)))
+	if (is_numeric(trim($ligne)) && !strpos(trim($ligne), "."))
 	{
 		if (intval(trim($ligne)) % 2 == 0)
 			echo("Le chiffre ".trim($ligne)." est Pair\n");
